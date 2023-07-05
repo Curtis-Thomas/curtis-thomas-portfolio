@@ -1,27 +1,24 @@
-import { AppBar, Button, Container, Typography } from "@mui/material";
+import { AppBar, Box, Button, Grid, Typography } from "@mui/material";
 
 const Header = () => {
   return (
-    <Container sx={{ height: "5vh" }}>
+    <Box sx={{ minHeight: "5vh" }}>
       <AppBar sx={{ height: "5vh", backgroundColor: "#272838" }}>
-        <Container
-          sx={{ height: "5vh", display: "flex", alignItems: "center" }}
-        >
-          {" "}
-          <Container>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={3}>
             <Typography>Curtis Thomas</Typography>
-          </Container>
-          <Container>
+          </Grid>
+          <Grid item xs={12} sm={6}>
             <Button sx={{ color: "#B1B1B2" }}>About</Button>
             <Button sx={{ color: "#B1B1B2" }}>Projects</Button>
             <Button sx={{ color: "#B1B1B2" }}>Contact</Button>
-          </Container>
-          <Container>
+          </Grid>
+          <Grid item xs={12} sm={3}>
             <Button sx={{ color: "#B1B1B2" }}>Resume</Button>
-          </Container>
-        </Container>
+          </Grid>
+        </Grid>
       </AppBar>
-    </Container>
+    </Box>
   );
 };
 

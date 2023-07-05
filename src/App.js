@@ -1,17 +1,16 @@
-
-import './App.css';
-import { Container } from '@mui/material';
-import Main from './core/Main';
-import Header from './core/Header';
-import Footer from './core/Footer';
+import { Box, CssBaseline } from "@mui/material";
+import Main from "./core/Main";
+import Header from "./core/Header";
+import Footer from "./core/Footer";
 
 function App() {
   return (
-    <Container>
+    <Box sx={{ backgroundColor: "#272838" }}>
+      <CssBaseline />
       <Header />
       <Main />
       <Footer />
-    </Container>
+    </Box>
   );
 }
 
