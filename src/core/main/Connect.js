@@ -30,7 +30,12 @@ const Connect = () => {
               </Typography>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <Button sx={{ color: "#B1B1B2" }}>
+              <Button
+                sx={{ color: "#B1B1B2" }}
+                target="_top"
+                rel="noopener noreferrer"
+                href={`mailto:curtisthomas08@hotmail.co.uk`}
+              >
                 CurtisThomas08@hotmail.co.uk
               </Button>
             </Grid>
@@ -43,7 +48,13 @@ const Connect = () => {
               </Typography>
             </Grid>
             <Grid item xs={12} sm={11}>
-              <Button sx={{ color: "#B1B1B2" }}>curtisthomas92</Button>
+              <Button
+                sx={{ color: "#B1B1B2" }}
+                target="_blank"
+                href="https://www.linkedin.com/in/curtisthomas92/"
+              >
+                curtisthomas92
+              </Button>
             </Grid>
           </Grid>
           <Grid container item xs={12} sm={12} backgroundColor={"#191F26"}>
@@ -55,7 +66,13 @@ const Connect = () => {
             </Grid>
             <Grid item xs={12} sm={11}>
               {" "}
-              <Button sx={{ color: "#B1B1B2" }}>Curtis-Thomas</Button>
+              <Button
+                sx={{ color: "#B1B1B2" }}
+                target="_blank"
+                href="https://github.com/Curtis-Thomas"
+              >
+                Curtis-Thomas
+              </Button>
             </Grid>
           </Grid>
         </Grid>
