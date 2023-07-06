@@ -20,7 +20,7 @@ const Jumbotron = () => {
             <img
               src={JumbotronImg}
               alt="Jumbotron"
-              style={{ objectFit: "fill", height: "100%" }}
+              style={{ objectFit: "fill", height: "100%", width: "100%" }}
             />
           </Grid>
         </Grid>

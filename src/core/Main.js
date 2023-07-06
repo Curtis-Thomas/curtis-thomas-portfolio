@@ -13,7 +13,9 @@ const Main = () => {
       <Grid container spacing={3}>
         {isDesktop && (
           <Grid item xs={12} sm={2}>
-            <LeftBar />
+            <Box sx={{ height: "100%", width: "100%" }}>
+              <LeftBar />
+            </Box>
           </Grid>
         )}
         <Grid item xs={12} sm={isDesktop ? 10 : 12}>
