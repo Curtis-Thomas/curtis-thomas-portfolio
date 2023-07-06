@@ -1,4 +1,4 @@
-import { Box, Card, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import ProjectCard from "./projects/ProjectCard";
 import mealsync from "./projects/mealsync.webp";
 

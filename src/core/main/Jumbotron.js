@@ -1,4 +1,4 @@
-import { Box, Button, Card, Grid, Typography } from "@mui/material";
+import { Box, Card, Grid, Typography } from "@mui/material";
 import JumbotronImg from "./jumbotron.png";
 
 const Jumbotron = () => {
