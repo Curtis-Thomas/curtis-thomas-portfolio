@@ -5,9 +5,11 @@ import Footer from "./core/Footer";
 
 function App() {
   return (
-    <Box sx={{ backgroundColor: "#272838" }}>
+    <Box sx={{ backgroundColor: "#060B10" }}>
       <CssBaseline />
+
       <Header />
+
       <Main />
       <Footer />
     </Box>
