@@ -9,7 +9,7 @@ const Main = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
 
   return (
-    <Box>
+    <Box sx={{ paddingLeft: 10, paddingRight: 10 }}>
       <Grid container spacing={3}>
         {isDesktop && (
           <Grid item xs={12} sm={2}>

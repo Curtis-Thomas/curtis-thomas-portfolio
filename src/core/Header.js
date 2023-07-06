@@ -30,7 +30,7 @@ const Header = () => {
                   <Button sx={{ color: "#B1B1B2" }}>Projects</Button>
                 </Grid>
                 <Grid item xs={12} sm={3}>
-                  <Button sx={{ color: "#B1B1B2" }}>Contact</Button>
+                  <Button sx={{ color: "#B1B1B2" }}>Connect</Button>
                 </Grid>
               </Grid>
               <Grid item xs={12} sm={3} justifyContent="center">

@@ -1,25 +1,43 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Card, Grid, Typography } from "@mui/material";
 
 const ProjectCard = ({ img, title, description }) => {
   return (
-    <>
-      <Box sx={{ backgroundColor: "#3B434C", width: "90%" }}>
-        <Grid container spacing={2}>
-          <Grid container item xs={11} sm={11}>
+    <Card
+      sx={{ backgroundColor: "#3B434C", padding: 4, marginTop: 5 }}
+      className="imageContainer"
+    >
+      <Grid container spacing={2} sx={{ color: "white" }}>
+        <Grid container item xs={12} sm={12}>
+          <Grid container item xs={12} sm={12}>
             {" "}
-            <Typography color={"white"}>{img}</Typography>
-          </Grid>
-          <Grid container item xs={11} sm={11}>
-            {" "}
-            <Typography color={"white"}>{title}</Typography>
-          </Grid>
-          <Grid container item xs={11} sm={11}>
-            {" "}
-            <Typography color={"white"}>{description}</Typography>
+            <Card
+              sx={{
+                overflow: "hidden",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <img
+                src={img}
+                alt=""
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
+            </Card>
           </Grid>
         </Grid>
-      </Box>
-    </>
+        <Grid container item xs={12} sm={12}>
+          <Typography variant="h6">{title}</Typography>
+        </Grid>
+        <Grid container item xs={12} sm={12}>
+          <Typography>{description}</Typography>
+        </Grid>
+      </Grid>
+    </Card>
   );
 };
 
