@@ -9,13 +9,11 @@ const Main = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
 
   return (
-    <Box sx={{ paddingLeft: 10, paddingRight: 10 }}>
-      <Grid container spacing={3}>
+    <Box>
+      <Grid container spacing={0}>
         {isDesktop && (
           <Grid item xs={12} sm={2}>
-            <Box sx={{ height: "100%", width: "100%" }}>
-              <LeftBar />
-            </Box>
+            <LeftBar />
           </Grid>
         )}
         <Grid item xs={12} sm={isDesktop ? 10 : 12}>
