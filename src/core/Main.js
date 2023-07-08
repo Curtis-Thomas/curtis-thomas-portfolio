@@ -16,10 +16,11 @@ const Main = () => {
             <LeftBar />
           </Grid>
         )}
-        <Grid item xs={12} sm={isDesktop ? 10 : 12}>
+        <Grid item xs={12} sm={isDesktop ? 8 : 12}>
           <Container
             sx={{
               borderLeft: "solid 1px white",
+              borderRight: "solid 1px white",
               paddingTop: 5,
               paddingBottom: 1,
             }}
@@ -30,6 +31,11 @@ const Main = () => {
             <Projects />
           </Container>
         </Grid>
+        {isDesktop && (
+          <Grid item xs={12} sm={2}>
+            <LeftBar />
+          </Grid>
+        )}
       </Grid>
     </Box>
   );

@@ -9,9 +9,30 @@ const Jumbotron = () => {
           <Grid item xs={12} sm={12}>
             <Typography color={"white"}>Curtis Thomas</Typography>
           </Grid>
-          <Grid item xs={12} sm={12}></Grid>
-          <Grid item xs={12} sm={12}></Grid>
-          <Grid item xs={12} sm={12}></Grid>
+          <Grid item xs={12} sm={12}>
+            <Typography color={"white"}> HTML</Typography>
+          </Grid>
+          <Grid item xs={12} sm={12}>
+            <Typography color={"white"}> CSS</Typography>
+          </Grid>
+          <Grid item xs={12} sm={12}>
+            <Typography color={"white"}> JavaScript</Typography>
+          </Grid>
+          <Grid item xs={12} sm={12}>
+            <Typography color={"white"}> React JS</Typography>
+          </Grid>
+          <Grid item xs={12} sm={12}>
+            <Typography color={"white"}> Material UI</Typography>
+          </Grid>
+          <Grid item xs={12} sm={12}>
+            <Typography color={"white"}> MongoDB</Typography>
+          </Grid>
+          <Grid item xs={12} sm={12}>
+            <Typography color={"white"}> Express JS</Typography>
+          </Grid>
+          <Grid item xs={12} sm={12}>
+            <Typography color={"white"}> Node JS</Typography>
+          </Grid>
         </Grid>
         <Grid item xs={12} sm={4}>
           <Grid item xs={12} sm={12}>
