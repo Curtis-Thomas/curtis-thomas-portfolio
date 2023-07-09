@@ -9,7 +9,7 @@ const AboutMe = () => {
           marginTop: 5,
           marginBottom: 5,
 
-          padding: 5,
+          padding: 2,
         }}
       >
         <Grid container spacing={2}>

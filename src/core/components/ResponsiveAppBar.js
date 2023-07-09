@@ -6,13 +6,12 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
 
 import Button from "@mui/material/Button";
 
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["Home", "Connect", "About", "Projects"];
+const pages = ["Home", "Skills", "Connect", "About", "Projects"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -29,13 +28,13 @@ function ResponsiveAppBar() {
     <AppBar
       position="static"
       sx={{
-        height: "5vh",
+        height: "7.5vh",
 
         backgroundColor: "#060B10",
         borderBottom: "1px solid white",
       }}
     >
-      <Container maxWidth="xl">
+      <Box sx={{ display: "flex", justifyContent: "center", height: "7.5vh" }}>
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -86,7 +85,7 @@ function ResponsiveAppBar() {
             ))}
           </Box>
         </Toolbar>
-      </Container>
+      </Box>
     </AppBar>
   );
 }
