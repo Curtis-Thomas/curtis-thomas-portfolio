@@ -15,7 +15,7 @@ const AboutMe = () => {
         <Grid container spacing={2}>
           <Grid container item xs={12} sm={12}>
             {" "}
-            <Typography sx={{ color: "white", fontSize: "2rem" }}>
+            <Typography color={"white"} variant="h3" component="h2">
               About Me
             </Typography>
           </Grid>

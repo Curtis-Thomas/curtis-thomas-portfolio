@@ -18,7 +18,9 @@ const Projects = () => {
       <Grid container spacing={3} marginBottom={15}>
         <Grid container item xs={12} sm={12}>
           {" "}
-          <Typography color={"white"}>Projects</Typography>
+          <Typography color={"white"} variant="h3" component="h2">
+            Projects
+          </Typography>
         </Grid>
         <Grid container item xs={12} sm={12} spacing={2}>
           <Grid container item xs={12} sm={6}>

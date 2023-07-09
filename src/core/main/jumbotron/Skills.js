@@ -21,16 +21,8 @@ const Skills = () => {
     >
       <Grid container xs={12} sm={12}>
         <Grid container item xs={12} sm={12}>
-          <Grid
-            item
-            xs={12}
-            sm={12}
-            sx={{
-              textAlign: "center",
-            }}
-            p={1}
-          >
-            <Typography color={"white"} variant="h2" component="h2">
+          <Grid item xs={12} sm={12} p={1}>
+            <Typography color={"white"} variant="h3" component="h2">
               Skills
             </Typography>
           </Grid>

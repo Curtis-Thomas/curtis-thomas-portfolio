@@ -1,4 +1,4 @@
-import { Card, Grid, Typography } from "@mui/material";
+import { Avatar, Card, Grid, Typography } from "@mui/material";
 import JumbotronImg from "./jumbotron.png";
 
 import BadgeIcon from "@mui/icons-material/Badge";
@@ -10,12 +10,17 @@ const Jumbotron = () => {
   return (
     <Card sx={{ backgroundColor: "#12181F", padding: 2 }}>
       <Grid container spacing={1} p={5}>
-        <Grid item xs={12} sm={5}>
-          <img
-            src={JumbotronImg}
-            alt="Jumbotron"
-            style={{ objectFit: "contain", width: "50%" }}
-          />
+        <Grid
+          item
+          xs={12}
+          sm={4}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Avatar src={JumbotronImg} sx={{ width: 132, height: 132 }} />
         </Grid>
         <Grid item xs={12} sm={7}>
           <Typography

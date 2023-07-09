@@ -17,7 +17,7 @@ const Connect = () => {
       >
         <Grid container spacing={1}>
           <Grid item xs={12} sm={12} marginBottom={3}>
-            <Typography sx={{ color: "white", fontSize: "2rem" }}>
+            <Typography color={"white"} variant="h3" component="h2">
               Connect
             </Typography>
             <Divider color="#191F26" />
