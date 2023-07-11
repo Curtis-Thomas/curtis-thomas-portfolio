@@ -37,7 +37,7 @@ const Main = () => {
         </Grid>
         {isDesktop && (
           <Grid item xs={12} sm={2}>
-            <LeftBar />
+            <></>
           </Grid>
         )}
       </Grid>
