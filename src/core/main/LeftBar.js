@@ -5,7 +5,6 @@ const LeftBar = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "blue",
         width: "100%",
         height: "100vh",
         display: "flex",

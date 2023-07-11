@@ -24,12 +24,12 @@ const Connect = () => {
           </Grid>
 
           <Grid container item xs={12} sm={12} backgroundColor={"#191F26"}>
-            <Grid item xs={12} sm={1}>
+            <Grid item xs={1} sm={1}>
               <Typography color={"white"}>
                 <EmailIcon />
               </Typography>
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={11} sm={6}>
               <Button
                 sx={{ color: "#B1B1B2" }}
                 target="_top"
@@ -42,12 +42,12 @@ const Connect = () => {
           </Grid>
 
           <Grid container item xs={12} sm={12}>
-            <Grid item xs={12} sm={1}>
+            <Grid item xs={1} sm={1}>
               <Typography color={"white"}>
                 <LinkedInIcon />
               </Typography>
             </Grid>
-            <Grid item xs={12} sm={11}>
+            <Grid item xs={11} sm={11}>
               <Button
                 sx={{ color: "#B1B1B2" }}
                 target="_blank"
@@ -58,13 +58,13 @@ const Connect = () => {
             </Grid>
           </Grid>
           <Grid container item xs={12} sm={12} backgroundColor={"#191F26"}>
-            <Grid item xs={12} sm={1}>
+            <Grid item xs={1} sm={1}>
               {" "}
               <Typography color={"white"}>
                 <GitHubIcon />
               </Typography>
             </Grid>
-            <Grid item xs={12} sm={11}>
+            <Grid item xs={11} sm={11}>
               {" "}
               <Button
                 sx={{ color: "#B1B1B2" }}
