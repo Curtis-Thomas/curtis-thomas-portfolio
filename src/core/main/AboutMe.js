@@ -21,9 +21,7 @@ const AboutMe = () => {
           </Grid>
           <Grid container item xs={12} sm={12}>
             {" "}
-            <Typography
-              sx={{ color: "#B1B1B2", fontSize: "1rem", marginTop: 5 }}
-            >
+            <Typography sx={{ color: "#B1B1B2", fontSize: "1rem" }}>
               Hello! My name is Curtis. I started my journey in the world of Web
               Development back in 2018 when I began building basic WordPress
               sites. After becoming proficient with WordPress, I naturally

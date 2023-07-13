@@ -6,10 +6,9 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-
 import Button from "@mui/material/Button";
-
 import MenuItem from "@mui/material/MenuItem";
+import { Link } from "react-scroll";
 
 const pages = ["Home", "Skills", "Connect", "About", "Projects"];
 
@@ -29,7 +28,6 @@ function ResponsiveAppBar() {
       position="static"
       sx={{
         height: "7.5vh",
-
         backgroundColor: "#060B10",
         borderBottom: "1px solid white",
       }}
@@ -67,7 +65,15 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Link
+                    to={page.toLowerCase()}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    <Typography textAlign="center">{page}</Typography>
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -80,7 +86,15 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                <Link
+                  to={page.toLowerCase()}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  {page}
+                </Link>
               </Button>
             ))}
           </Box>
@@ -89,4 +103,5 @@ function ResponsiveAppBar() {
     </AppBar>
   );
 }
+
 export default ResponsiveAppBar;

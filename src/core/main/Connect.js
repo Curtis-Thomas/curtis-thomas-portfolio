@@ -1,4 +1,4 @@
-import { Button, Card, Divider, Grid, Typography } from "@mui/material";
+import { Button, Card, Grid, Typography } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -20,7 +20,6 @@ const Connect = () => {
             <Typography color={"white"} variant="h3" component="h2">
               Connect
             </Typography>
-            <Divider color="#191F26" />
           </Grid>
 
           <Grid container item xs={12} sm={12} backgroundColor={"#191F26"}>
