@@ -5,7 +5,6 @@ import Projects from "./main/Projects";
 import Connect from "./main/Connect";
 import LeftBar from "./main/LeftBar";
 import Skills from "./main/jumbotron/Skills";
-import { Link } from "react-scroll";
 
 const Main = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
@@ -27,31 +26,26 @@ const Main = () => {
             }}
           >
             <div id="home"></div>
-            <Link to="jumbotron" smooth={true}>
-              <div id="jumbotron">
-                <Jumbotron />
-              </div>
-            </Link>
-            <Link to="skills" smooth={true}>
-              <div id="skills">
-                <Skills />
-              </div>
-            </Link>
-            <Link to="connect" smooth={true}>
-              <div id="connect">
-                <Connect />
-              </div>
-            </Link>
-            <Link to="about" smooth={true}>
-              <div id="about">
-                <AboutMe />
-              </div>
-            </Link>
-            <Link to="projects" smooth={true}>
-              <div id="projects">
-                <Projects />
-              </div>
-            </Link>
+
+            <div id="jumbotron">
+              <Jumbotron />
+            </div>
+
+            <div id="skills">
+              <Skills />
+            </div>
+
+            <div id="connect">
+              <Connect />
+            </div>
+
+            <div id="about">
+              <AboutMe />
+            </div>
+
+            <div id="projects">
+              <Projects />
+            </div>
           </Container>
         </Grid>
         {isDesktop && (
