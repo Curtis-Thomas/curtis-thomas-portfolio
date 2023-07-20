@@ -1,4 +1,4 @@
-import { Box, Container, Grid, useMediaQuery } from "@mui/material";
+import { Box, Container, Divider, Grid, useMediaQuery } from "@mui/material";
 import Jumbotron from "./main/Jumbotron";
 import AboutMe from "./main/AboutMe";
 import Projects from "./main/Projects";
@@ -11,41 +11,55 @@ const Main = () => {
 
   return (
     <Box>
-      <Grid container spacing={5}>
+      <div id="home"></div>
+      <Grid container sx={{ width: "100%" }}>
         {isDesktop && (
           <Grid item xs={12} sm={2}>
             <LeftBar />
           </Grid>
         )}
-        <Grid item xs={12} sm={isDesktop ? 8 : 12}>
+        <Grid
+          item
+          xs={12}
+          sm={isDesktop ? 8 : 12}
+          sx={{
+            borderLeft: "solid 1px white",
+            borderRight: "solid 1px white",
+          }}
+        >
           <Container
             sx={{
-              borderLeft: "solid 1px white",
-              borderRight: "solid 1px white",
               padding: 4,
             }}
           >
-            <div id="home"></div>
-
-            <div id="jumbotron">
+            <Grid item xs={12} sm={12}>
+              <Divider id="home"></Divider>
+            </Grid>
+            <Grid item xs={12} sm={12}>
               <Jumbotron />
-            </div>
-
-            <div id="skills">
+            </Grid>
+            <Grid item xs={12} sm={12}>
+              <Divider id="skills"></Divider>
+            </Grid>
+            <Grid item xs={12} sm={12}>
               <Skills />
-            </div>
-
-            <div id="connect">
+            </Grid>
+            <Divider id="connect"> </Divider>
+            <Grid item xs={12} sm={12}>
               <Connect />
-            </div>
-
-            <div id="about">
+            </Grid>
+            <Grid item xs={12} sm={12}>
+              <Divider id="about"> </Divider>
+            </Grid>
+            <Grid item xs={12} sm={12}>
               <AboutMe />
-            </div>
-
-            <div id="projects">
+            </Grid>
+            <Grid item xs={12} sm={12}>
+              <Divider id="projects"></Divider>
+            </Grid>
+            <Grid item xs={12} sm={12}>
               <Projects />
-            </div>
+            </Grid>
           </Container>
         </Grid>
         {isDesktop && (
